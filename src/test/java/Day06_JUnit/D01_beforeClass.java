@@ -20,6 +20,7 @@ public class D01_beforeClass {
 
     @BeforeClass
     public static void setup(){
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -40,18 +41,24 @@ public class D01_beforeClass {
 
     @Test
     public void testJava(){
+
         driver.get("https://www.amazon.com");
+
         WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("Java" + Keys.ENTER);
+
         WebElement aramaSonucElementi= driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
         System.out.println(aramaSonucElementi.getText());
     }
 
     @Test
     public void testSelenium(){
+
         driver.get("https://www.amazon.com");
+
         WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("Selenium" + Keys.ENTER);
+
         WebElement aramaSonucElementi= driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
         System.out.println(aramaSonucElementi.getText());
     }

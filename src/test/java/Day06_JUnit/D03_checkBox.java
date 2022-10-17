@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class D02_checkBox {
+public class D03_checkBox {
 
         /*
 
