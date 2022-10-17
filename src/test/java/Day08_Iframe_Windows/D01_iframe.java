@@ -37,21 +37,21 @@ public class D01_iframe {
     }
 
     @Test
-    public  void alertTest() throws InterruptedException {
+    public void iframeTest() throws InterruptedException {
 
-        // ● https://the-internet.herokuapp.com/iframe adresine gidin.
+        //   ● https://the-internet.herokuapp.com/iframe adresine gidin.
         driver.get("https://the-internet.herokuapp.com/iframe");
 
-        //  ● Bir metod olusturun: iframeTest
-        // ○ “An IFrame containing….” textinin erisilebilir oldugunu test edin
+        //   ● Bir metod olusturun: iframeTest
+        //   ○ “An IFrame containing….” textinin erisilebilir oldugunu test edin
         WebElement anIframeYaziElementi= driver.findElement(By.tagName("h3"));
-
         Assert.assertTrue(anIframeYaziElementi.isEnabled());
 
         //      ve  konsolda    yazdirin.
         System.out.println(anIframeYaziElementi.getText());
 
-        //      ○ Text Box’a “Merhaba Dunya!” yazin.
+        //  ○ Text Box’a “Merhaba Dunya!” yazin.
+
         /*
           Ulasmak istedigimiz webelement bir iframe icerisinde ise driver o webelemente direk ulasamaz
           once webelent'in icerisinde oldugu iframe'e gecis yapmaniz gerekir
@@ -62,18 +62,17 @@ public class D01_iframe {
                 seceneklerinden biri ile switchto( ). frame( ) method'u kullanilir
          */
 
-        WebElement iframeElementi = driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']"));
-
-
-        WebElement yaziAlaniElementi = driver.findElement(By.xpath("//body[@id=‘tinymce’]"));
-
+        WebElement iframeElementi= driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']"));
+        driver.switchTo().frame(iframeElementi);
+        WebElement yaziAlaniElementi= driver.findElement(By.xpath("//body[@id='tinymce']"));
         yaziAlaniElementi.clear();
-        yaziAlaniElementi.sendKeys("Hello New World");
+        yaziAlaniElementi.sendKeys("Merhaba Dunya!");
 
-        // ○ TextBox’in altinda bulunan “Elemental Selenium”
-        // Linkini textinin görunür oldugunu dogrulayin ve  konsolda yazdirin.
+        //  ○ TextBox’in altinda bulunan “Elemental Selenium”
+        //  Linkini textinin gorunur oldugunu dogrulayin ve  konsolda yazdirin.
 
         /*
+
          Bir iframe'in icerisine girdikten sonra
          asil sayfa ile ilgili bir islem yapmak isterseniz
          oncelikle icerisine girdigin iframe'den cikmaniz lazim
@@ -83,19 +82,15 @@ public class D01_iframe {
          */
 
         driver.switchTo().defaultContent();
+        WebElement elementalSelenimLinki= driver.findElement(By.linkText("Elemental Selenium"));
+        Assert.assertTrue(elementalSelenimLinki.isEnabled());
+        System.out.println(elementalSelenimLinki.getText());
 
-        WebElement elementalSeleniumLink = driver.findElement(By.linkText("Elemental Selenium"));
-        Assert.assertTrue(elementalSeleniumLink.isEnabled());
-
-        System.out.println(elementalSeleniumLink.getText());
-
-        Thread.sleep(3000);
-
+        Thread.sleep(5000);
+    }
+    @After
+    public void teardown(){
+        driver.close();
 
     }
-
-        @After
-        public void teardown(){
-            driver.close();
-        }
 }
