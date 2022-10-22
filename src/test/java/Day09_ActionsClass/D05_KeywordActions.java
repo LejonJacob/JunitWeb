@@ -23,8 +23,6 @@ public class D05_KeywordActions extends TestBase {
             // https://www.amazon.com anasayfasina gidin
             driver.get("https://www.amazon.com");
 
-            /*
-
             // Arama kutusuna "nutella" yazin
             WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
             aramaKutusu.sendKeys("nutella");
@@ -35,10 +33,9 @@ public class D05_KeywordActions extends TestBase {
             // Arama kutusunu temizleyelim
             aramaKutusu.clear();
 
-             */
 
             // Arama kutusuna actions class'ini kullanarak "SamsungA71" yazdirin
-            WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
+            aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
 
             Actions actions= new Actions(driver);
             threadSleep(1);
