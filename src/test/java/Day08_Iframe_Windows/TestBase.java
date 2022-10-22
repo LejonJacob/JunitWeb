@@ -28,4 +28,15 @@ public class TestBase {
         driver.quit();
     }
 
+    public static void threadSleep(int beklenecekSaniye){
+
+        try{
+            Thread.sleep(beklenecekSaniye*1000);
+
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
 }

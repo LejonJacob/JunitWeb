@@ -27,6 +27,22 @@ public class D01_beforeClass {
 
     }
 
+    // amazon anasayfasina gidin
+    // Üc ayri test method'u olusturup
+    // Nutella, java ve Selenium icin arama yapip, arama sonuclarini yazdirin
+
+     /*
+
+      @BeforeClass ve @AfterClass notasyonlarinin kullanildigi method'lar
+      static olmak ZORUNDADIR
+
+      JUnit Test method'larini ongoremeyecegimiz bir sira ile calistirir
+      Test method'larini yazarken tamaminin bagimsiz olarak da
+       calistirilabilecegini goz onunde bulundurmaliyiz
+
+     */
+
+
     @Test
     public void testNutella(){
 
