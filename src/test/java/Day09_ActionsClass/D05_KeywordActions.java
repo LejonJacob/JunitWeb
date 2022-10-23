@@ -31,8 +31,7 @@ public class D05_KeywordActions extends TestBase {
             driver.findElement(By.id("twotabsearchtextbox")).sendKeys(Keys.ENTER);
 
             // Arama kutusunu temizleyelim
-            aramaKutusu.clear();
-
+            driver.findElement(By.id("twotabsearchtextbox")).clear();
 
             // Arama kutusuna actions class'ini kullanarak "SamsungA71" yazdirin
             aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));

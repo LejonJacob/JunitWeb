@@ -52,15 +52,16 @@ public class D02_mouseAction2 extends TestBase {
         // 7- Acilan sayfada h1 taginda “Elemental Selenium” yazdigini test edelim
         // Önce driver'i 2. sayfaya gecirmeliyiz, bunun icinde 2. sayfanin handle degerini bulmaliyiz
         Set<String> handleDegerlerSeti = driver.getWindowHandles();
-        String ikincisayfaHandleDegeri = "";
+        String ikinciSayfaHandleDegeri = "";
 
         for (String eachHandleDegeri : handleDegerlerSeti){
 
             if (!eachHandleDegeri.equals(ilkSayfaHandleDegeri)){
-                ikincisayfaHandleDegeri=eachHandleDegeri;
+                ikinciSayfaHandleDegeri=eachHandleDegeri;
             }
 
         }
+        driver.switchTo().window(ikinciSayfaHandleDegeri);
 
         WebElement h1TagElementi= driver.findElement(By.tagName("h1"));
 
