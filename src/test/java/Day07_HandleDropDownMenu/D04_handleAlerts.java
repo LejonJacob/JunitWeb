@@ -92,16 +92,16 @@ public class D04_handleAlerts {
         driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
         Thread.sleep(2000);
 
-        // uyarıdaki metin kutusuna isminizi yazin,
-        driver.switchTo().alert().sendKeys("Nevzat Celik");
+        // Uyarıdaki metin kutusuna isminizi yazin
+        driver.switchTo().alert().sendKeys("Jacob Lejon");
         Thread.sleep(3000);
 
         // OK butonuna tıklayın
         driver.switchTo().alert().accept();
 
-        //      ve result mesajında isminizin görüntülendiğini doğrulayın.
+        // ve result mesajında isminizin görüntülendiğini doğrulayın.
         String actualSonucYazisi= driver.findElement(By.xpath("//p[@id='result']")).getText();
-        String expectedIsim="Lejon";
+        String expectedIsim="Jacob Lejon";
         Thread.sleep(3000);
         Assert.assertTrue(actualSonucYazisi.contains(expectedIsim));
     }
