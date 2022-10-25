@@ -1,6 +1,6 @@
 package Day11_Cookies_WebTables;
 
-import Day08_Iframe_Windows.TestBase;
+import Utility.TestBase;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;

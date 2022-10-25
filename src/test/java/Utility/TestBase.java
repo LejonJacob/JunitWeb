@@ -1,4 +1,4 @@
-package Day08_Iframe_Windows;
+package Utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;

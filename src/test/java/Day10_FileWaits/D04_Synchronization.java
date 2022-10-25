@@ -1,6 +1,6 @@
 package Day10_FileWaits;
 
-import Day08_Iframe_Windows.TestBase;
+import Utility.TestBase;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;
 import org.openqa.selenium.By;

@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class D03_hndleWindows {
+public class D03_handleWindows2 {
 
 
         WebDriver driver;
@@ -49,9 +49,9 @@ public class D03_hndleWindows {
 
         // ● Sayfa title’nin “Amazon” icerdigini test edin
         String expectedTitle= "Amazon";
-        String actulaTitle = driver.getTitle();
+        String actualTitle = driver.getTitle();
 
-        Assert.assertTrue(actulaTitle.contains(expectedTitle));
+        Assert.assertTrue(actualTitle.contains(expectedTitle));
 
         // ● Yeni bir tab olusturup, acilan tab’da wisequarter.com adresine gidin
 
@@ -74,7 +74,7 @@ public class D03_hndleWindows {
         System.out.println(actualTitle1);
         Assert.assertTrue(actualTitle1.contains(expectedTitle1));
 
-        // ● Yeni bir window olusturup, acilan sayfada wallmart.com adresine gidin
+        // ● Yeni bir window olusturup, acilan sayfada walmart.com adresine gidin
         driver.switchTo().newWindow(WindowType.WINDOW).get("https://www.walmart.com");
         Thread.sleep(3000);
 
@@ -102,9 +102,9 @@ public class D03_hndleWindows {
         driver.switchTo().window(ilksayfaHandleDegeri);
 
         expectedTitle= "Amazon";
-        actulaTitle = driver.getTitle();
+        actualTitle = driver.getTitle();
 
-        Assert.assertTrue(actulaTitle.contains(expectedTitle));
+        Assert.assertTrue(actualTitle.contains(expectedTitle));
 
 
         Thread.sleep(2500);

@@ -1,6 +1,6 @@
 package Day09_ActionsClass;
 
-import Day08_Iframe_Windows.TestBase;
+import Utility.TestBase;
 import com.github.javafaker.Faker;
 import org.junit.Test;
 import org.openqa.selenium.By;
