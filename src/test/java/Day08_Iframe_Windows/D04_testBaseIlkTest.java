@@ -2,7 +2,7 @@ package Day08_Iframe_Windows;
 
 import org.junit.Test;
 
-public class D04_testBaseIlkTest extends TestBase{
+public class D04_testBaseIlkTest extends TestBase {
 
     @Test
     public void test01(){
