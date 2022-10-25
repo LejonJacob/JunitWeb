@@ -70,6 +70,7 @@ public class D01_handleDropDownMenu {
             int aramaSonucSayisiInt= Integer
                     .parseInt(aramaSonucStr
                             .substring(indexOfOf+3,indexOfResults-1));
+
             Assert.assertTrue(aramaSonucSayisiInt>1000);
 
         }
