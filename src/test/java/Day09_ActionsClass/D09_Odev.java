@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 
 
-public class D10_Odev extends TestBase {
+public class D09_Odev extends TestBase {
 
         /*
 
@@ -51,7 +51,7 @@ public class D10_Odev extends TestBase {
 
     }
 
-//TODO***********************       Nevzat Beyin Cözümüne Uyulanan Scrol Sayfa Kaydirma      *********************************
+//TODO***********************       Nevzat'in Cözümüne Uygulanan Scroll Sayfa Kaydirma      *********************************
 
 
     @Test

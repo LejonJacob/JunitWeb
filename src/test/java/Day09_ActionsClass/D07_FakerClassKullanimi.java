@@ -44,9 +44,9 @@ public class D07_FakerClassKullanimi extends TestBase {
                 .sendKeys(Keys.TAB).sendKeys("Oct").sendKeys(Keys.TAB).sendKeys("2000")
                 .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ARROW_RIGHT).sendKeys(Keys.ARROW_LEFT)
                 .sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
+                .sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();  // 4- Kaydol tusuna basalim
 
-        // 4- Kaydol tusuna basalim
+
 
         threadSleep(4);
 

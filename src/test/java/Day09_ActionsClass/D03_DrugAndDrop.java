@@ -30,7 +30,7 @@ public class D03_DrugAndDrop extends TestBase {
         String actualDroppedYazisi=droppedYaziElementi.getText();
         Assert.assertEquals(expectedDroppedYazisi,actualDroppedYazisi);
 
-        Thread.sleep(5000);
+        Thread.sleep(4000);
 
     }
 
