@@ -17,7 +17,7 @@ public class D02_FileDownloadTest extends TestBase {
 
         1. Tests packagenin altina bir class oluşturalim : D02_FileDownload
         2. https://the-internet.herokuapp.com/download adresine gidelim.
-        3. code.txt dosyasını indirelim
+        3. logo.png dosyasını indirelim
         4. Dosyanın başarıyla indirilip indirilmediğini test edelim
 
         */
