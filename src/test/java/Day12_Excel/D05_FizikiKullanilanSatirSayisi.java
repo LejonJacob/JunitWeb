@@ -25,5 +25,7 @@ public class D05_FizikiKullanilanSatirSayisi {
         int fizikiKullanilanSatirSayisi = workbook.getSheet("Sayfa1").getPhysicalNumberOfRows();
 
         System.out.println("Fiziki Kullanilan Satir Sayisi: " + fizikiKullanilanSatirSayisi);
+        
+
     }
 }
