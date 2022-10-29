@@ -1,6 +1,7 @@
 package Day12_Excel;
 
 import org.apache.poi.ss.usermodel.*;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.FileInputStream;
@@ -35,6 +36,14 @@ public class D02_ReadExcell {
         // 10. WorkbookFactory.create(fileInputStream)
         Workbook workbook = WorkbookFactory.create(fis);
 
+        /*
+
+          37. satirda kod alemimizde bir workbook olusturup
+          fis objesi ile okunan excel'deki bilgileri workbook'a yukledik
+          boylece excel'dfeki datalarin bir kopyasi workbook objesine yuklendi
+
+         */
+
 
         // 11. Worksheet objesi olusturun workbook.getSheetAt(index)
         Sheet sheet = workbook.getSheet("Sayfa1");
@@ -48,6 +57,13 @@ public class D02_ReadExcell {
         Cell cell = row.getCell(2);
 
         System.out.println(cell); // Arnavutluk
+
+
+        // 14- 14. satirdaki ülkenin Türkcesinin Bahreyn oldugunu test edin
+        String  expectedIsim = "Bahreyn";
+        String  actualIsim = cell.toString();
+
+        Assert.assertEquals(expectedIsim, actualIsim);
 
     }
 
