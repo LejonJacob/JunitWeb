@@ -91,6 +91,7 @@ public class D01_WebTableOdev extends TestBase {
         // 10. class icerisinde bir method olusturun,
         // Test sayfasindan satir ve sütun sayisini girdigimde bana datayi yazdirsin
 
+
     }
 
 }
