@@ -39,8 +39,8 @@ public class D02_ReadExcell {
         /*
 
           37. satirda kod alemimizde bir workbook olusturup
-          fis objesi ile okunan excel'deki bilgileri workbook'a yukledik
-          boylece excel'dfeki datalarin bir kopyasi workbook objesine yuklendi
+          fis objesi ile okunan excell'deki bilgileri workbook'a yukledik
+          boylece excell'dfeki datalarin bir kopyasi workbook objesine yuklendi
 
          */
 

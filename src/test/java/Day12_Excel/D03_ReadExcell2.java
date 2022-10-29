@@ -6,15 +6,14 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class D03_ReadExcell {
+public class D03_ReadExcell2 {
 
     @Test
     public void readExcellTest() throws IOException {
 
-        // Ülkeler exceline gidin
+        // Ülkeler excell'ine gidin
         // 32. satirdaki ülke isminin Ingilizce "Canada" oldugunu test edin
 
         String dosyaYolu = System.getProperty("user.home") + "\\Desktop\\FileTesti\\ulkeler.xlsx";
