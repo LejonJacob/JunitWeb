@@ -12,12 +12,12 @@ public class D03_ScreenShot extends TestBase {
 
         driver.get("https://www.amazon.com");
 
-        fullPageScreenShotMethod();
+        fullPageScreenShot();
         threadSleep(1);
 
 
         driver.get("https://www.youtube.com");
-        fullPageScreenShotMethod();
+        fullPageScreenShot();
 
 
     }

@@ -15,7 +15,7 @@ public class D04_ScreenShotWebElement extends TestBase {
     public void testAmazon3() throws IOException {
 
 
-        // amazon.com ana sayfasina gidin
+        // https://www.amazon.com ana sayfasina gidin
         driver.get("https://www.amazon.com");
 
         // Arama kutusuna "Nutella" yazdirip aratalim

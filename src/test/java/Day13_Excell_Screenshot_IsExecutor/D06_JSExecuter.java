@@ -11,6 +11,15 @@ public class D06_JSExecuter extends TestBase {
     @Test
     public void jsExecuterTest(){
 
+        /*
+
+         https://www.guru99.com/scroll-up-down-selenium-webdriver.html
+
+         Yukaridaki sayfadan diger JavaScriptExecutor methodlarina bakip isimize yarayacak
+         methodlari kullanabuliriz
+
+         */
+
         // Amazon anasayfaya gidelim
         driver.get("https://www.amazon.com");
 

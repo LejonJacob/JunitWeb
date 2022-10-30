@@ -47,7 +47,7 @@ public class TestBase {
 
     }
 
-    public void fullPageScreenShotMethod() throws IOException {
+    public void fullPageScreenShot() throws IOException {
 
         // Tüm sayfanin screenshot'ini almak icin 4 adim gerekiyor
 

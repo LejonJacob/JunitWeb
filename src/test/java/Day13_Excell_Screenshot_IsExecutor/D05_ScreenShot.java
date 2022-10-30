@@ -17,7 +17,7 @@ public class D05_ScreenShot extends TestBase {
 
 
         // Tüm sayfanin fotografini cekelim
-        fullPageScreenShotMethod();
+        fullPageScreenShot();
 
 
         // Arama kutusuna "Nutella" yazip, fotografini cekelim
