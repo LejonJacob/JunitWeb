@@ -32,5 +32,8 @@ public class D03_ReadExcell2 {
         Assert.assertEquals(expectedIsim, actualIsim);
 
 
+        fis1.close();
+
+
     }
 }

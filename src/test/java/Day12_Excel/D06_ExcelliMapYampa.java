@@ -68,5 +68,8 @@ public class D06_ExcelliMapYampa {
         Assert.assertEquals(expectedBaskentIsmi,actualBaskentIsmi);
 
 
+        fis.close();
+
+
     }
 }

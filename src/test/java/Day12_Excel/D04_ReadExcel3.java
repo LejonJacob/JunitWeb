@@ -62,5 +62,8 @@ public class D04_ReadExcel3 {
           System.out.println("En uzun isimli ulke : " + enUzunIsim);
           Assert.assertEquals("Mikronezya Federal Devletleri",enUzunIsim);
 
+
+          fis3.close();
+
       }
 }
