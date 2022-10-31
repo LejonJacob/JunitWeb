@@ -18,7 +18,7 @@ public class D01_WebTableOdev extends TestBase {
          2. Headers da bulunan basliklari yazdirin
          3. 3. sütunun basligini yazdirin
          4. Tablodaki tum datalari yazdirin
-         5. Tabloda kac cell (data) oldugunu yazdirin
+         5. Tabloda kac tane bos olmayan cell (data) oldugunu yazdirin
          6. Tablodaki satir sayisini yazdirin
          7. Tablodaki sutun sayisini yazdirin
          8. Tablodaki 3.kolonu yazdirin
@@ -50,7 +50,7 @@ public class D01_WebTableOdev extends TestBase {
 
         }
 
-        // 5. Tabloda kac cell (data) oldugunu yazdirin
+        // 5. Tabloda kac tane bos olmayan cell (data) oldugunu yazdirin
         int sayac = 0;
 
         for (WebElement eachCell : dataElementListi){
