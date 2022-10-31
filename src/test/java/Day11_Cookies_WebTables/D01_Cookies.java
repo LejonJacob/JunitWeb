@@ -16,7 +16,7 @@ public class D01_Cookies extends TestBase {
         driver.get("https://www.youtube.com");
 
         TestBase.threadSleep(4);
-        driver.findElement(By.xpath("(//tp-yt-paper-button[@id=\"button\"])[6]")).click();
+        driver.findElement(By.xpath("//span[text()=\"Tümünü reddet\"]")).click();
 
         Set<Cookie> cookiesSeti =  driver.manage().getCookies();
 

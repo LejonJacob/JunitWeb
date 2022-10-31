@@ -12,8 +12,9 @@ public class D03_webTables extends TestBase {
     public void amazonTest(){
 
         // 1- Amazon anasayfaya gidin
-        // 2- En altdaki web table'dan home service secenegini tiklayin
+        // 2- En altdaki web table'dan Home Service secenegini tiklayin
         // 3- Ilgili sayfaya gittigini test edin
+        // 4- Tüm table body'sinde "care" kelimesinin icermedigini test edin
 
         // 1- Amazon anasayfaya gidin
         driver.get("https://www.amazon.com");

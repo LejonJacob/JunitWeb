@@ -13,14 +13,14 @@ public class D04_webTables2 extends TestBase {
     @Test
     public void test01(){
 
-        // amazon anasayfaya gidin
+        // https://www.amazon.com anasayfasina gidin
         driver.get("https://www.amazon.com");
 
-        // en alttaki web table'da 10 satir oldugunu test edin
+        // En alttaki web table'da 10 satir oldugunu test edin
         List<WebElement> satirlarListesi = driver.findElements(By.xpath("//table//tr"));
         Assert.assertTrue(satirlarListesi.size()==10);
 
-        // sutun sayisinin 14 oldugunu test edin
+        // Sutun sayisinin 14 oldugunu test edin
         List<WebElement> ilkSatirDataListesi = driver.findElements(By.xpath("//table//tr[1]/td"));
         Assert.assertTrue(ilkSatirDataListesi.size()==14);
 
@@ -44,12 +44,12 @@ public class D04_webTables2 extends TestBase {
         // 3.satir, 5.sutundaki basligin Home Service oldugunu test edin
         WebElement ucuncuSatirBesinciSutun= driver.findElement(By.xpath("//table//tr[3]/td[5]"));
 
-        String expectedIcerik="Home Service";
-        String actualData=ucuncuSatirBesinciSutun.getText();
+        String expectedIcerik= "Home Service";
+        String actualData= ucuncuSatirBesinciSutun.getText();
 
         Assert.assertTrue(actualData.contains(expectedIcerik));
 
-        // satir ve sutun degerlerini verdigimizde tablodaki o bolumu yazdiracak bir method olusturun
+        // Satir ve sutun degerlerini verdigimizde tablodaki o bolumu yazdiracak bir method olusturun
         dataYazdir(5,5);
         threadSleep(5);
     }
