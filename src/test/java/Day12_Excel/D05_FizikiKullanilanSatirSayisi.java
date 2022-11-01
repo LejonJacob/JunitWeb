@@ -20,7 +20,7 @@ public class D05_FizikiKullanilanSatirSayisi {
 
         int toplamSatirSayisi = workbook.getSheet("Sayfa2").getLastRowNum();
         // index kullandigi icin satir sayisini bulmak icin 1 ekleyelim
-        System.out.println("Toplam satir sayisi: " + toplamSatirSayisi);
+        System.out.println("Toplam satir sayisi: " + (toplamSatirSayisi + 1) );
 
         int fizikiKullanilanSatirSayisi = workbook.getSheet("Sayfa1").getPhysicalNumberOfRows();
 

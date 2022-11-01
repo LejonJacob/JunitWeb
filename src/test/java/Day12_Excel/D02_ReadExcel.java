@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class D02_ReadExcell {
+public class D02_ReadExcel {
 
     @Test
     public void excellTest() throws IOException {
@@ -21,6 +21,7 @@ public class D02_ReadExcell {
         11. Worksheet objesi olusturun workbook.getSheetAt(index)
         12. Row objesi olusturun sheet.getRow(index)
         13. Cell objesi olusturun row.getCell(index)
+        14- 14. satirdaki ülkenin Türkcesinin Bahreyn oldugunu test edin
 
          */
 

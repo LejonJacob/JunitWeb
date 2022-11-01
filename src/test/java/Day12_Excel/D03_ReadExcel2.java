@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class D03_ReadExcell2 {
+public class D03_ReadExcel2 {
 
     @Test
     public void readExcellTest() throws IOException {
