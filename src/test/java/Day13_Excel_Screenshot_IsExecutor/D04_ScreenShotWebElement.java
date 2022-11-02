@@ -1,4 +1,4 @@
-package Day13_Excell_Screenshot_IsExecutor;
+package Day13_Excel_Screenshot_IsExecutor;
 
 import Utility.TestBase;
 import org.apache.commons.io.FileUtils;

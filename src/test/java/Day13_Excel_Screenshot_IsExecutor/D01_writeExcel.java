@@ -1,4 +1,4 @@
-package Day13_Excell_Screenshot_IsExecutor;
+package Day13_Excel_Screenshot_IsExecutor;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class D01_writeExcell {
+public class D01_writeExcel {
 
     @Test
     public void writeExcellTest() throws IOException {
@@ -38,7 +38,7 @@ public class D01_writeExcell {
 
         // 4) 4. indexteki hucreye yeni bir cell olusturalim
         // 5) Olusturdugumuz hucreye “Nufus” yazdiralim
-        workbook.getSheet("Sayfa1").getRow(1).createCell(4).setCellValue("Nüfus");
+        workbook.getSheet("Sayfa1").getRow(0).createCell(4).setCellValue("Nüfus");
 
 
         // 6) 2.satir nufus kolonuna 1500000 yazdiralim
@@ -53,7 +53,7 @@ public class D01_writeExcell {
         workbook.getSheet("Sayfa1").getRow(14).createCell(4).setCellValue("54.000");
 
 
-        // 9) 15. satirdaki nüfus bilgisini 540000olarak düzeltelim
+        // 9) 15. satirdaki nüfus bilgisini 540000 olarak düzeltelim
         workbook.getSheet("Sayfa1").getRow(14).getCell(4).setCellValue("540.000");
 
 
