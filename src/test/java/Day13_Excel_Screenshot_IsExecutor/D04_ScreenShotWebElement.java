@@ -35,13 +35,12 @@ public class D04_ScreenShotWebElement extends TestBase {
         // Sadece sonuc yazisi elementinin ScreenShot'ini cekelim
 
         // 1. adim ScreenShot cekecegimiz webElementi locate edelim
-        TakesScreenshot tssElement = (TakesScreenshot) aramaSonucElementi;
 
         // 2. 3. ve 4. adimlar tüm sayfa ScreenShot ile ayni
 
         File locateElementSShot = new File("target/Screenshot/SeleniumSShot.jpeg");
 
-        File geciciResim = tssElement.getScreenshotAs(OutputType.FILE);
+        File geciciResim = aramaSonucElementi.getScreenshotAs(OutputType.FILE);
 
         FileUtils.copyFile(geciciResim, locateElementSShot);
 

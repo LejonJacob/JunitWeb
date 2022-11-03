@@ -59,7 +59,7 @@ public class TestBase {
         //    Resim dosya yoluna tarih ekleyelim
         LocalDateTime ldt = LocalDateTime.now();
 
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YYMMddHHmmss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern(" YY-MM-dd HH.mm.ss");
 
         File fullPageSShot = new File("target/Screenshot/SeleniumSShot"+ ldt.format(dtf) +".jpeg");
 
@@ -76,7 +76,7 @@ public class TestBase {
     public void webElementScreenShot(WebElement target) throws IOException{
 
         LocalDateTime ldt=LocalDateTime.now();
-        DateTimeFormatter dtf= DateTimeFormatter.ofPattern("YYMMddHHmmss");
+        DateTimeFormatter dtf= DateTimeFormatter.ofPattern("YY-MM-dd_HH.mm.ss");
 
         File locateElementSShot = new File("target/Screenshot/SeleniumSShot"+ ldt.format(dtf) +".jpeg");
 

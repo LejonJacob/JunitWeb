@@ -12,6 +12,7 @@ public class D05_ScreenShot extends TestBase {
 
     @Test
     public void test01() throws IOException {
+
         // Amazon anasayfaya gidelim
         driver.get("https://www.amazon.com");
 
@@ -23,6 +24,7 @@ public class D05_ScreenShot extends TestBase {
         // Arama kutusuna "Nutella" yazip, fotografini cekelim
         WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("Nutella");
+
         webElementScreenShot(aramaKutusu);
         aramaKutusu.submit();
 
