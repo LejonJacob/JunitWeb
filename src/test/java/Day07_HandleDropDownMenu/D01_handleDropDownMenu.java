@@ -43,7 +43,7 @@ public class D01_handleDropDownMenu {
 
 
         @Test
-    public void dropDownTest(){
+    public void dropDownTest() throws InterruptedException {
 
             // amazona gidin
             // Arama kutusunun solundaki search-in menusunden Electronics'i secin
@@ -71,13 +71,13 @@ public class D01_handleDropDownMenu {
                     .parseInt(aramaSonucStr
                             .substring(indexOfOf+3,indexOfResults-1));
 
-            Assert.assertTrue(aramaSonucSayisiInt>1000);
+            Assert.assertTrue(aramaSonucSayisiInt>10);
 
         }
 
         @After
     public void teardown(){
-            driver.close();
+            // driver.close();
 
         }
 

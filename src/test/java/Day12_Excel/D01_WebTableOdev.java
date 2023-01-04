@@ -31,7 +31,7 @@ public class D01_WebTableOdev extends TestBase {
         driver.get("https://demoqa.com/webtables");
 
         // 2. Headers da bulunan basliklari yazdirin
-        List<WebElement> baslikElementListi= driver.findElements(By.xpath("div[@class=\"rt-th rt-resizable-header -cursor-pointer\"]"));
+        List<WebElement> baslikElementListi= driver.findElements(By.xpath("//div[@class=\"rt-th rt-resizable-header -cursor-pointer\"]"));
 
         for(WebElement eachElement : baslikElementListi){
             System.out.println(eachElement.getText() + " ---- ");
